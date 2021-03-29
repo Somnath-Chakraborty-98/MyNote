@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.add.AddNoteFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="9dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@android:color/white"
+        android:src="@drawable/ic_save" />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toStartOf="@+id/save_note"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Title"
+        android:background="@null"/>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="410dp"
+        android:layout_height="587dp"
+        android:layout_below="@+id/editTextTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="-64dp"
+        android:layout_marginBottom="5dp"
+        android:background="@null"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Note"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
